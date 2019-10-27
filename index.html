@@ -14,22 +14,23 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
-          "🐈"
           "🐱"
+          "🐈"
           "🎃"
           "🦶";
         min-height: 100vh;
-        max-width: 80vw;
+        min-width: 100vw;
+        background-color: var(--color-blue);
       }
 
       @media (min-width: 30em) {
         body {
-        grid-template-columns: 1fr 3fr 2fr;
+        grid-template-columns: 1fr 4fr 1fr 2fr;
         grid-template-areas: 
-          "🌝 🐈 🐈"
-          "🐱 🐱 🐅"
-          "🎃 🎃 🎃"
-          "🦶 🦶 🦶";
+          "🌝 . . 🐱"
+          ". 🐈 🐈 🐈"
+          ". 🎃 🎃 ."
+          "🦶 🦶 🦶 .";
         }
       }
 
@@ -40,6 +41,7 @@
       .moon {
         grid-area: 🌝;
       }
+      
       nav {
         grid-area: 🐱;
       }
@@ -56,18 +58,20 @@
       .moon {
         width: 100px;
         height: 100px;
-        z-index: 10;
-        background-color: var(--color-lilac);
-        border-radius: var(--border-radius-circle);
-        animation: moon-rise var(--duration-long) ease-in;
+        transform: scale(2.0);
+        z-index: -1;
+        background-color: var(--color-white);
+        border-radius: 50%;
+        animation: moon-rise 5s ease-in;
       }
 
       figure {
         float: right;
-        margin: 1em;
+        margin: 2em;
         shape-margin: 3em;
         /* shape-outside: circle(); */
         shape-outside: url(https://cdn.glitch.com/876953c2-09db-4226-b06b-2fb6fe7bff8a%2Ftiger.svg?v=1572201824160);
+      
       }
 
       figcaption {
@@ -78,7 +82,8 @@
       .tiger {
         width: 125px;
         animation: tiger-head 3s ease;
-        transform: rotate(12deg);
+        transform: rotate(14deg);
+        
       }
 
       @media (min-width: 30em)  {
@@ -100,12 +105,14 @@
       @keyframes moon-rise {
       from {
         opacity: 0;
-        transform: translateX(0px) translateY(-200px);
+        transform: scale(0.4) translateX(0px) translateY(0px);
+        background-color: var(--color-tangerine);
       }
 
       to {
         opacity: 1;
-        transform: translateX(0px) translateY(0px);
+        transform: scale(2.0) translateX(0px) translateY(0px);
+        background-color: var(--color-white);
       }
       }
 
@@ -115,16 +122,19 @@
       }
 
       to {
-        transform: scale(1) rotate(12deg);
+        transform: scale(1) rotate(14deg);
         }
       }
+      
+      
     
     </style>
 
   </head>
 
   <body>
-   	
+   	<div class="moon" aria-hidden="true"></div>
+    
     <header>
       <h1>CC Fest Rocks</h1>
     </header>
@@ -194,14 +204,13 @@
     
           <figcaption>虎 Tiger hŭ</figcaption>
           </figure>
-        <p>CC Fest is a free and inclusive event for students and teachers to engage in creative coding. Come spend a day making interactive and engaging digital art, animation, games. Teachers will work on bringing coding  projects to their classes. Students will be introduced to projects that will help build their creative portfolios. It is organized by a volunteer group of educators and led by Saber Khan, Education Community Director at Processing Foundation. </p>
+        <p class="standfirst">CC Fest is a free and inclusive event for students and teachers to engage in creative coding. Come spend a day making interactive and engaging digital art, animation, games. Teachers will work on bringing coding  projects to their classes. Students will be introduced to projects that will help build their creative portfolios. It is organized by a volunteer group of educators and led by Saber Khan, Education Community Director at Processing Foundation. </p>
 
         <h2 class="community-title">p5.js Community Statement </h2>
         <p>p5.js is a community interested in exploring the creation of art and design with technology.</p>
 
         <p>We are a community of, and in solidarity with, people from every gender identity and expression, sexual orientation, race, ethnicity, language, neuro-type, size, ability, class, religion, culture, subculture, political opinion, age, skill level, occupation, and background. We acknowledge that not everyone has the time, financial means, or capacity to actively participate, but we recognize and encourage involvement of all kinds. We facilitate and foster access and empowerment. We are all learners.
         </p>
-
         <p>We like these hashtags: #noCodeSnobs (because we value community over efficiency), #newKidLove (because we all started somewhere), #unassumeCore (because we don't assume knowledge), and #BlackLivesMatter (because of course).
         </p>
 
@@ -235,9 +244,8 @@
       
         
     </main>
-    <aside>
-        <div class="moon" aria-hidden="true"></div>
-    </aside>
+    
+    
     <footer>
         <a href="https://github.com/scottgruber/ccfest-rocks-la">
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" aria-label="github" clip-rule="evenodd" viewBox="0 0 32 32">

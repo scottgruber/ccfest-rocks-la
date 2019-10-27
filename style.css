@@ -105,6 +105,7 @@
 
 body {
   color: var(--black-80);
+  background-color: var(--color-white);
   font-family: var(--font-family);
   font-size: var(--font-size);
   line-height: var(--line-height-text);
@@ -113,7 +114,6 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  background: var(--color-white);
   
 }
 
@@ -157,6 +157,10 @@ h6 {
 
 p {
   line-height: var(--line-height-text);
+}
+
+.standfirst {
+  font-size: var(--font-size-medium);
 }
 
 hr {
