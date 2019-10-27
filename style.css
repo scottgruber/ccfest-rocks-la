@@ -23,7 +23,7 @@
   --color-black-10: #e6e6e6;
   --color-white: #fff;
   
-  /* --font-family: 'Nunito', Helvetica, Arial, sans-serif; */
+  --font-family-alt: 'Nunito', Helvetica, Arial, sans-serif;
   --font-family: var(--font-family-mono);
   --font-family-display: var(--font-family-mono);
   --font-family-system: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
