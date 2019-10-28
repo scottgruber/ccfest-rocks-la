@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 :root {
-
   --color-blue: #00a6e3;
   --color-lilac: #e8e8e8;
   --color-electric-blue: #0096db;
@@ -22,13 +21,15 @@
   --color-black-20: #ccc;
   --color-black-10: #e6e6e6;
   --color-white: #fff;
-  
-  --font-family-alt: 'Nunito', Helvetica, Arial, sans-serif;
+
+  --font-family-alt: "Nunito", Helvetica, Arial, sans-serif;
   --font-family: var(--font-family-mono);
   --font-family-display: var(--font-family-mono);
-  --font-family-system: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  --font-family-mono: Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
-  
+  --font-family-system: -apple-system, BlinkMacSystemFont, "helvetica neue",
+    helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  --font-family-mono: Menlo, Consolas, Monaco, "Liberation Mono",
+    "Lucida Console", monospace;
+
   --font-weight-thin: 200;
   --font-weight-light: 300;
   --font-weight: 400;
@@ -37,7 +38,7 @@
   --font-weight-bold: 700;
   --font-weight-xbold: 800;
   --font-weight-black: 900;
-  
+
   /* Type scale  major second */
   --text-scale-ratio: 1.125;
 
@@ -56,36 +57,34 @@
   --font-size-small: 0.889rem;
   --font-size-x-small: 0.79rem;
 
-  
   --line-height-text: 1.5;
   --line-height-display: 1.125;
   --line-height-alt: 1.25;
   --line-height: 1;
-  
-  --border-radius-x-small: .25rem;
-  --border-radius-small: .5rem;
-  --border-radius-medium: .75rem;
+
+  --border-radius-x-small: 0.25rem;
+  --border-radius-small: 0.5rem;
+  --border-radius-medium: 0.75rem;
   --border-radius-large: 1rem;
   --border-radius-circle: 50%;
-  
 
   --border-width-hairline: 1px;
   --border-width-thin: 2px;
   --border-width-thick: 4px;
   --border: var(--border-width-hairline) solid var(--blue);
   --border-thick-gold: var(--border-width-thick) solid var(--gold);
-    
+
   --max-width: 90rem;
   --min-width: 60rem;
-  --spacing-x-small: .25rem;
-  --spacing-small: .5rem;
-  --spacing: .75rem;
+  --spacing-x-small: 0.25rem;
+  --spacing-small: 0.5rem;
+  --spacing: 0.75rem;
   --spacing-medium: 1rem;
   --spacing-large: 1.5rem;
-  --spacing-xx-small: .125rem;
+  --spacing-xx-small: 0.125rem;
   --spacing-x-large: 2rem;
   --spacing-xx-large: 3rem;
-  
+
   --bp-x-small: 18.75em;
   --bp-small: 30em;
   --bp-medium: 48em;
@@ -114,7 +113,6 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  
 }
 
 h1,
@@ -181,7 +179,7 @@ img {
   max-width: 100%;
   display: block;
 }
-   
+
 small {
   font-size: var(--font-size-x-small);
 }
@@ -208,43 +206,4 @@ select {
   }
 }
 
-.type-sample {
-  font-size: var(--font-size-display);
-}
 
-
-.thin {
-  font-weight: var(--font-weight-thin);
-}
-
-.light {
-  font-weight: var(--font-weight-light);
-}
-
-.regular {
-  font-weight: var(--font-weight);
-}
-
-.medium {
-  font-weight: var(--font-weight-medium);
-}
-
-.semi-bold {
-  font-weight: var(--font-weight-semi-bold);
-}
-
-.bold {
-  font-weight: var(--font-weight-bold);
-}
-
-.xbold {
-  font-weight: var(--font-weight-xbold);
-}
-
-.black {
-  font-weight: var(--font-weight-black);
-}
-
-.italic {
-  font-style: italic;
-}
