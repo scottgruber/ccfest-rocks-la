@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <title>Color Swatch Palette | CC Fest</title>
     <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
 
     <style type="text/css">
-      
       body {
         background-color: var(--color-white);
+        max-width: 90vw;
       }
-      
+
       h2:nth-of-type(2) {
         margin-top: 4em;
       }
@@ -21,7 +20,7 @@
       .palette-primary {
         display: grid;
         grid-gap: 2vw;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         margin: 3rem;
       }
 
@@ -35,7 +34,7 @@
       .palette-secondary .palette {
         display: grid;
         row-gap: 2vw;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         
       }
 
@@ -68,8 +67,8 @@
         height: 100px;
       }
 
-
-      figure, figcaption {
+      figure,
+      figcaption {
         margin: 0;
         padding: 0;
       }
@@ -77,413 +76,466 @@
       figure img {
         max-width: 300px;
       }
-
     </style>
   </head>
 
   <body>
-      <header>
-          <h1>Color Palette > CC Fest</h1>
-          
-        </header>
-        
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="typography.html">Typography</a></li>
-            <li><a href="color.html">Color Palette</a></li>
-            <li><a href="sketch.html">p5.js Sketches</a></li>
-          </ul>
-        </nav>
+    <header>
+      <h1>Color Palette | CC Fest</h1>
+    </header>
 
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="typography.html">Typography</a></li>
+        <li><a href="color.html">Color Palette</a></li>
+        <li><a href="sketch.html">p5.js Sketches</a></li>
+      </ul>
+    </nav>
 
     <main>
-
       <h2>Layout Colors</h2>
-      
-      <div class="palette-primary">
 
-          <div class="swatch">
+      <div class="palette-primary">
+        <div class="swatch">
           <div style="background: var(--color-blue);"></div>
           <div>
             <h3>Cerulean Blue</h3>
-            <p><b>Hex: </b>00a6e3<br>
-              <b>Token:</b> --color-blue</p>
+            <p>
+              <b>Hex: </b>00a6e3<br />
+              <b>Token:</b> --color-blue
+            </p>
           </div>
-          </div>
+        </div>
 
-          <div class="swatch">
+        <div class="swatch">
           <div style="background: var(--color-dark-pastel-green);"></div>
           <div>
             <h3>Dark Pastel Green</h3>
-            <p><b>Hex: </b>#00bd30<br>
-              <b>Token:</b> --color-dark-pastel-green</p>
+            <p>
+              <b>Hex: </b>#00bd30<br />
+              <b>Token:</b> --color-dark-pastel-green
+            </p>
           </div>
-          </div>
-        
-          <div class="swatch">
+        </div>
+
+        <div class="swatch">
           <div style="background: var(--color-electric-blue);"></div>
           <div>
             <h3>Electric Blue</h3>
-            <p><b>Hex: </b>#0096db<br>
-              <b>Token:</b> --color-electric-blue</p>
+            <p>
+              <b>Hex: </b>#0096db<br />
+              <b>Token:</b> --color-electric-blue
+            </p>
           </div>
-          </div>
-        
-          <div class="swatch">
+        </div>
+
+        <div class="swatch">
           <div style="background: var(--color-reno-sand);"></div>
           <div>
             <h3>Reno Sand</h3>
-            <p><b>Hex: </b>#a6660f<br>
-              <b>Token:</b> --color-reno-sand</p>
+            <p>
+              <b>Hex: </b>#a6660f<br />
+              <b>Token:</b> --color-reno-sand
+            </p>
           </div>
-          </div>
+        </div>
 
-          <div class="swatch">
-          <div class="swatch--white" style="background: var(--color-tangerine);">
-          </div>
+        <div class="swatch">
+          <div style="background: var(--color-tangerine);"></div>
           <div>
             <h3>Tangerine</h3>
-            <p><b>Hex: </b>#ffd100<br>
-              <b>Token:</b> --color-tangerine</p>
+            <p>
+              <b>Hex: </b>#ffd100<br />
+              <b>Token:</b> --color-tangerine
+            </p>
           </div>
-          </div>
+        </div>
 
-          <div class="swatch">
-          <div class="swatch--white" style="background: var(--color-white);border: 1px solid var(--color-black-50);">
-          </div>
+        <div class="swatch">
+          <div
+            style="background: var(--color-white);border: 1px solid var(--color-black-50);"
+          ></div>
           <div>
             <h3>White</h3>
-            <p><b>Hex: </b>#ffd100<br>
-              <b>HSL: </b>hsl(0, 0%, 100%)<br>
-              <b>RGB: </b>rgb(255, 255, 255)<br>
-              <b>Token:</b> --color-tangerine</p>
+            <p>
+              <b>Hex: </b>#ffd100<br />
+              <b>HSL: </b>hsl(0, 0%, 100%)<br />
+              <b>Token:</b> --color-white
+            </p>
           </div>
-          </div>
+        </div>
 
-          <div class="swatch">
+        <div class="swatch">
           <div style="background: var(--color-black-10);"></div>
           <div>
             <h3>Black-10</h3>
-            <p><b>Hex: </b>#000<br>
-              <b>HSL: </b>hsl(0, 0%, 90%)<br>
-              <b>RGB: </b>rgb(230, 230, 230)<br>
-              <b>Token:</b> --color-black-10</p>
+            <p>
+              <b>Hex: </b>#000<br />
+              <b>HSL: </b>hsl(0, 0%, 90%)<br />
+
+              <b>Token:</b> --color-black-10
+            </p>
           </div>
-          </div>
-        
-          <div class="swatch">
+        </div>
+
+        <div class="swatch">
           <div style="background: var(--color-black-20);"></div>
           <div>
             <h3>Black-20</h3>
-            <p><b>Hex: </b>#ccc<br>
-              <b>HSL: </b>hsl(0, 0%, 80%)<br>
-              <b>RGB: </b>rgb(204, 204, 204)<br>
-              <b>Token:</b> --color-black-20</p>
-          </div>
-          </div>
+            <p>
+              <b>Hex: </b>#ccc<br />
+              <b>HSL: </b>hsl(0, 0%, 80%)<br />
 
-          <div class="swatch">
+              <b>Token:</b> --color-black-20
+            </p>
+          </div>
+        </div>
+
+        <div class="swatch">
           <div style="background: var(--color-black-30);"></div>
           <div>
             <h3>Black-30</h3>
-            <p><b>Hex: </b>#b3b3b3<br>
-              <b>HSL: </b>hsl(0, 0%, 70%)<br>
-              <b>RGB: </b>rgb(179, 179, 179)<br>
-              <b>Token:</b> --color-black-30</p>
-          </div>
-          </div>
+            <p>
+              <b>Hex: </b>#b3b3b3<br />
+              <b>HSL: </b>hsl(0, 0%, 70%)<br />
 
-          <div class="swatch">
+              <b>Token:</b> --color-black-30
+            </p>
+          </div>
+        </div>
+
+        <div class="swatch">
           <div style="background: var(--color-black-40);"></div>
           <div>
             <h3>Black-40</h3>
-            <p><b>Hex: </b>#999<br>
-              <b>HSL: </b>hsl(0, 0%, 60%)<br>
-              <b>RGB: </b>rgb(153, 153, 153)<br>
-              <b>Token:</b> --color-black-40</p>
-          </div>
-          </div>
+            <p>
+              <b>Hex: </b>#999<br />
+              <b>HSL: </b>hsl(0, 0%, 60%)<br />
 
-          <div class="swatch">
+              <b>Token:</b> --color-black-40
+            </p>
+          </div>
+        </div>
+
+        <div class="swatch">
           <div style="background: var(--color-black-50);"></div>
           <div>
             <h3>Black-50</h3>
-            <p><b>Hex: </b>#808080<br>
-              <b>HSL: </b>hsl(0, 0%, 50%)<br>
-              <b>RGB: </b>rgb(128, 128, 128)<br>
-              <b>Token:</b> --color-black-50</p>
-          </div>
-          </div>
+            <p>
+              <b>Hex: </b>#808080<br />
+              <b>HSL: </b>hsl(0, 0%, 50%)<br />
 
-          <div class="swatch">
+              <b>Token:</b> --color-black-50
+            </p>
+          </div>
+        </div>
+
+        <div class="swatch">
           <div style="background: var(--color-black-60);"></div>
           <div>
             <h3>Black-60</h3>
-            <p><b>Hex: </b>#666<br>
-              <b>HSL: </b>hsl(0, 0%, 40%)<br>
-              <b>RGB: </b>rgb(102, 102, 102)<br>
-              <b>Token:</b> --color-black-40</p>
-          </div>
-          </div>
+            <p>
+              <b>Hex: </b>#666<br />
+              <b>HSL: </b>hsl(0, 0%, 40%)<br />
 
-          <div class="swatch">
+              <b>Token:</b> --color-black-60
+            </p>
+          </div>
+        </div>
+
+        <div class="swatch">
           <div style="background: var(--color-black-70);"></div>
           <div>
             <h3>Black-70</h3>
-            <p><b>Hex: </b>#4d4d4d<br>
-              <b>HSL: </b>hsl(0, 0%, 30%)<br>
-              <b>RGB: </b>rgb(77, 77, 77)<br>
-              <b>Token:</b> --color-black-70</p>
-          </div>
-          </div>
+            <p>
+              <b>Hex: </b>#4d4d4d<br />
+              <b>HSL: </b>hsl(0, 0%, 30%)<br />
 
-          <div class="swatch">
+              <b>Token:</b> --color-black-70
+            </p>
+          </div>
+        </div>
+
+        <div class="swatch">
           <div style="background: var(--color-black-80);"></div>
           <div>
             <h3>Black-80</h3>
-            <p><b>Hex: </b>#333<br>
-              <b>HSL: </b>hsl(0, 0%, 20%)<br>
-              <b>RGB: </b>rgb(51, 51, 51)<br>
-              <b>Token:</b> --color-black-80</p>
-          </div>
-          </div>
+            <p>
+              <b>Hex: </b>#333<br />
+              <b>HSL: </b>hsl(0, 0%, 20%)<br />
 
-          <div class="swatch">
+              <b>Token:</b> --color-black-80
+            </p>
+          </div>
+        </div>
+
+        <div class="swatch">
           <div style="background: var(--color-black-90);"></div>
           <div>
             <h3>Black-90</h3>
-            <p><b>Hex: </b>#1a1a1a<br>
-              <b>HSL: </b>hsl(0, 0%, 10%)<br>
-              <b>RGB: </b>rgb(26, 26, 26)<br>
-              <b>Token:</b> --color-black-90</p>
-          </div>
-          </div>
+            <p>
+              <b>Hex: </b>#1a1a1a<br />
+              <b>HSL: </b>hsl(0, 0%, 10%)<br />
 
-          <div class="swatch">
+              <b>Token:</b> --color-black-90
+            </p>
+          </div>
+        </div>
+
+        <div class="swatch">
           <div style="background: var(--color-black);"></div>
           <div>
             <h3>Black</h3>
-            <p><b>Hex: </b>#000<br>
-              <b>HSL: </b>hsl(0, 0%, 0%)<br>
-              <b>RGB: </b>rgb(0, 0, 0)<br>
-              <b>Token:</b> --color-black</p>
-          </div>
-          </div>
+            <p>
+              <b>Hex: </b>#000<br />
+              <b>HSL: </b>hsl(0, 0%, 0%)<br />
 
+              <b>Token:</b> --color-black
+            </p>
+          </div>
+        </div>
       </div>
- 
 
       <h2>Santa Monica Mountains color inspiration</h2>
       <div class="palette-secondary">
-      
-      <figure>
-        <img src="https://cdn.glitch.com/876953c2-09db-4226-b06b-2fb6fe7bff8a%2Fsm-colors-1.jpg?v=1572201850904" alt="" />
-        <figcaption>
-          <p><b>Color palette 1</b></p>
-          <section class="palette">
-            <div class="swatch">
-              <div style="background: #4F643D;"></div>
-              <div>
-                <p> <b>Hex: </b>#4F643D<br>
-                  <b>HSL: </b>92° 24% 32%<br>
-                  <b>RGB: </b>79 100 61</p>
+        <figure>
+          <img
+            src="https://cdn.glitch.com/876953c2-09db-4226-b06b-2fb6fe7bff8a%2Fsm-colors-1.jpg?v=1572201850904"
+            alt=""
+          />
+          <figcaption>
+            <p><b>Color palette 1</b></p>
+            <section class="palette">
+              <div class="swatch">
+                <div style="background: #4F643D;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#4F643D<br />
+                    <b>HSL: </b>hsl(92, 24%, 32%)<br />
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #BAC96D;"></div>
-              <div>
-                <p> <b>Hex: </b>#BAC96D<br>
-                  <b>HSL: </b>70° 46% 61%<br>
-                  <b>RGB: </b>186 201 109 </p>
+              <div class="swatch">
+                <div style="background: #BAC96D;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#BAC96D<br />
+                    <b>HSL: </b>hsl(70, 46% 61%)<br />
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #5C4E48;"></div>
-              <div>
-                <p> <b>Hex: </b>#5C4E48<br>
-                  <b>HSL: </b>18° 12% 32%<br>
-                  <b>RGB: </b>92 78 72</p>
+              <div class="swatch">
+                <div style="background: #5C4E48;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#5C4E48<br />
+                    <b>HSL: </b>hsl(18, 12% 32%)<br />
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #A69D92;"></div>
-              <div>
-                <p><b>Hex: </b>#A69D92<br>
-                  <b>HSL: </b>33° 10% 61%<br>
-                  <b>RGB: </b>166 157 146</p>
+              <div class="swatch">
+                <div style="background: #A69D92;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#A69D92<br />
+                    <b>HSL: </b>hsl(33, 10% 61%)<br />
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #BFB3A8;"></div>
-              <div>
-                <p> <b>Hex: </b>#BFB3A8<br>
-                  <b>HSL: </b>29° 15% 70%<br>
-                  <b>RGB: </b>191 179 168</p>
+              <div class="swatch">
+                <div style="background: #BFB3A8;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#BFB3A8<br />
+                    <b>HSL: </b>hsl(29, 15% 70%)<br />
+                  </p>
+                </div>
               </div>
-            </div>
-          </section>
-        </figcaption>
-      </figure>
-     
-      <figure>
-        <img src="https://cdn.glitch.com/876953c2-09db-4226-b06b-2fb6fe7bff8a%2Fsm-colors-2.jpg?v=1572201858104" alt="">
-        <figcaption>
-          <p><b>Color palette 2</b></p>
-          <section class="palette">
-            <div class="swatch">
-              <div style="background: #595736;"></div>
-              <div>
-                <p><b>Hex: </b>#595736<br>
-                  <b>HSL: </b>57° 24% 28%<br>
-                  <b>RGB: </b>89 87 54</p>
-              </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #D9C3A9;"></div>
-              <div>
-                <p> <b>Hex: </b>#D9C3A9<br>
-                  <b>HSL: </b>33° 39% 76%<br>
-                  <b>RGB: </b>217 195 169</p>
-              </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #F0E7D8;"></div>
-              <div>
-                <p> <b>Hex: </b>#F0E7D8<br>
-                  <b>HSL: </b>38° 44% 89%<br>
-                  <b>RGB: </b>240 231 216</p>
-              </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #BFAB99;"></div>
-              <div>
-                <p> <b>Hex: </b>#BFAB99<br>
-                  <b>HSL: </b>28° 23% 67%<br>
-                  <b>RGB: </b>191 171 153</p>
-              </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #8C7C6D;"></div>
-              <div>
-                <p><b>Hex: </b>#8C7C6D<br>
-                  <b>HSL: </b>29° 12% 49%<br>
-                  <b>RGB: </b>140 124 109</p>
-              </div>
-            </div>
-          </section>
-        </figcaption>
-      </figure>
-     
-      <figure>
-        <img src="https://cdn.glitch.com/876953c2-09db-4226-b06b-2fb6fe7bff8a%2Fsm-colors-3.jpg?v=1572201872097" alt="">
-        <figcaption>
-          <p><b>Color palette 3</b></p>
-          <section class="palette">
-            <div class="swatch">
-              <div style="background: #5891D8;"></div>
-              <div>
-                <p> <b>Hex: </b>#5891D8<br>
-                  <b>HSL: </b>213° 62% 60%<br>
-                  <b>RGB: </b>88 145 216</p>
-              </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #4B89BF;"></div>
-              <div>
-                <p><b>Hex: </b>#4B89BF<br>
-                  <b>HSL: </b>208° 48% 52%<br>
-                  <b>RGB: </b>75 137 191</p>
-              </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #79BAF2;"></div>
-              <div>
-                <p><b>Hex: </b>#79BAF2<br>
-                  <b>HSL: </b>208° 82% 71%<br>
-                  <b>RGB: </b>121 186 242</p>
-              </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #D9AD77;"></div>
-              <div>
-                <p><b>Hex: </b>#D9AD77<br>
-                  <b>HSL: </b>33° 56% 66%<br>
-                  <b>RGB: </b>217 173 119</p>
-              </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #A67C58;"></div>
-              <div>
-                <p><b>Hex: </b>#A67C58<br>
-                  <b>HSL: </b>28° 31% 50%<br>
-                  <b>RGB: </b>166 124 88</p>
-              </div>
-            </div>
-          </section>
-        </figcaption>
-      </figure>
+            </section>
+          </figcaption>
+        </figure>
 
-      <figure>
-        <img src="https://cdn.glitch.com/876953c2-09db-4226-b06b-2fb6fe7bff8a%2Fsm-colors-4.jpg?v=1572201884287" alt="">
-        <figcaption>
-          <p><b>Color palette 4</b></p>
-          <section class="palette">
-            <div class="swatch">
-              <div style="background: #6F798a;"></div>
-              <div>
-                <p><b>Hex: </b>#6F798A<br>
-                  <b>HSL: </b>218° 11% 49%<br>
-                  <b>RGB: </b>111 121 138 </p>
+        <figure>
+          <img
+            src="https://cdn.glitch.com/876953c2-09db-4226-b06b-2fb6fe7bff8a%2Fsm-colors-2.jpg?v=1572201858104"
+            alt=""
+          />
+          <figcaption>
+            <p><b>Color palette 2</b></p>
+            <section class="palette">
+              <div class="swatch">
+                <div style="background: #595736;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#595736<br />
+                    <b>HSL: </b>hsl(57, 24% 28%)<br />
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #BFB063;"></div>
-              <div>
-                <p><b>Hex: </b>#BFB063<br>
-                  <b>HSL: </b>50° 42% 57%<br>
-                  <b>RGB: </b>191 176 99</p>
+              <div class="swatch">
+                <div style="background: #D9C3A9;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#D9C3A9<br />
+                    <b>HSL: </b>hsl(33, 39% 76%)<br />
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #DAD1CB;"></div>
-              <div>
-                <p><b>Hex: </b>#DAD1CB<br>
-                  <b>HSL: </b>24° 17% 83%<br>
-                  <b>RGB: </b>218 209 203 </p>
+              <div class="swatch">
+                <div style="background: #F0E7D8;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#F0E7D8<br />
+                    <b>HSL: </b>hsl(38, 44% 89%)<br />
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #454543;"></div>
-              <div>
-                <p><b>Hex: </b>#454543<br>
-                  <b>HSL: </b>60° 1% 27%<br>
-                  <b>RGB: </b>69 69 67</p>
+              <div class="swatch">
+                <div style="background: #BFAB99;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#BFAB99<br />
+                    <b>HSL: </b>hsl(28, 23% 67%)<br />
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #A68C76;"></div>
-              <div>
-                <p><b>Hex: </b>#A68C76<br>
-                  <b>HSL: </b>28° 21% 56%<br>
-                  <b>RGB: </b>166 140 118 </p>
+              <div class="swatch">
+                <div style="background: #8C7C6D;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#8C7C6D<br />
+                    <b>HSL: </b>hsl(29, 12% 49%)<br />
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="swatch">
-              <div style="background: #95561F;"></div>
-              <div>
-                <p><b>Hex: </b>#95561F<br>
-                  <b>HSL: </b>28° 66% 35%<br>
-                  <b>RGB: </b>149 86 31</p>
-              </div>
-            </div>
-          </section>
-        </figcaption>
-      </figure>
+            </section>
+          </figcaption>
+        </figure>
 
+        <figure>
+          <img
+            src="https://cdn.glitch.com/876953c2-09db-4226-b06b-2fb6fe7bff8a%2Fsm-colors-3.jpg?v=1572201872097"
+            alt=""
+          />
+          <figcaption>
+            <p><b>Color palette 3</b></p>
+            <section class="palette">
+              <div class="swatch">
+                <div style="background: #5891D8;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#5891D8<br />
+                    <b>HSL: </b>hsl(213, 62% 60%)<br />
+                  </p>
+                </div>
+              </div>
+              <div class="swatch">
+                <div style="background: #4B89BF;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#4B89BF<br />
+                    <b>HSL: </b>hsl(208, 48% 52%)<br />
+                  </p>
+                </div>
+              </div>
+              <div class="swatch">
+                <div style="background: #79BAF2;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#79BAF2<br />
+                    <b>HSL: </b>hsl(208, 82% 71%)<br />
+                  </p>
+                </div>
+              </div>
+              <div class="swatch">
+                <div style="background: #D9AD77;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#D9AD77<br />
+                    <b>HSL: </b>hsl(33, 56% 66%)<br />
+                  </p>
+                </div>
+              </div>
+              <div class="swatch">
+                <div style="background: #A67C58;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#A67C58<br />
+                    <b>HSL: </b>hsl(28, 31% 50%)<br />
+                  </p>
+                </div>
+              </div>
+            </section>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://cdn.glitch.com/876953c2-09db-4226-b06b-2fb6fe7bff8a%2Fsm-colors-4.jpg?v=1572201884287"
+            alt=""
+          />
+          <figcaption>
+            <p><b>Color palette 4</b></p>
+            <section class="palette">
+              <div class="swatch">
+                <div style="background: #6F798a;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#6F798A<br />
+                    <b>HSL: </b>hsl(218, 11% 49%)<br />
+                  </p>
+                </div>
+              </div>
+              <div class="swatch">
+                <div style="background: #BFB063;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#BFB063<br />
+                    <b>HSL: </b>hsl(50, 42% 57%)<br />
+                  </p>
+                </div>
+              </div>
+              <div class="swatch">
+                <div style="background: #DAD1CB;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#DAD1CB<br />
+                    <b>HSL: </b>hsl(24, 17% 83%)<br />
+                  </p>
+                </div>
+              </div>
+              <div class="swatch">
+                <div style="background: #454543;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#454543<br />
+                    <b>HSL: </b>hsl(60, 1% 27%)<br />
+                  </p>
+                </div>
+              </div>
+              <div class="swatch">
+                <div style="background: #A68C76;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#A68C76<br />
+                    <b>HSL: </b>hsl(28, 21% 56%)<br />
+                  </p>
+                </div>
+              </div>
+              <div class="swatch">
+                <div style="background: #95561F;"></div>
+                <div>
+                  <p>
+                    <b>Hex: </b>#95561F<br />
+                    <b>HSL: </b>hsl(28, 66% 35%)<br />
+                  </p>
+                </div>
+              </div>
+            </section>
+          </figcaption>
+        </figure>
+      </div>
     </main>
-
-
   </body>
-
 </html>
