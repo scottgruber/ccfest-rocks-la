@@ -54,6 +54,7 @@ _Resources for developers, by developers_.
 
 - [scottgruber.me](https://scottgruber.me)
 - [@scott_gruber](https://twitter.com/scott_gruber)
-- [css.la](https://css.la)
+
+
 
 Special thanks to [Saber Khan](https://www.edsaber.info/), education community director at the [Processing Foundation](https://processingfoundation.org) and the organizers, students, teachers and volunteers at ccfest for welcoming me to the p5.js community.
